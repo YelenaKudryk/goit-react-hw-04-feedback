@@ -13,7 +13,7 @@ const App = () => {
 
   const options = Object.keys(feedbacks);
   const { good, neutral, bad } = feedbacks;
-  const total = feedbacks.good + feedbacks.neutral + feedbacks.bad;
+  const total = good + neutral + bad;
 
   const leaveFeedback = name => {
     setFeedbacks(prevFeedbacks => {
